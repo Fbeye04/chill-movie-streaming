@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  background-color: #181a1c;
+  color: #ffffff;
+}
+
+header {
+  padding: 25px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  position: absolute;
+  width: 100%;
+}
+
+.left-header {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.title img {
+  width: 25px;
+  height: 22px;
+}
+
+.title h3 {
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.arrow-down {
+  width: 14px;
+  height: 9px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 94px;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 470px;
+  background: linear-gradient(to top, #181a1cbc 60%, transparent 80%);
+  z-index: 2;
+}
+
+.movie-detail {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  top: 220px;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 668px;
+  gap: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.description h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-detail {
+  display: flex;
+  gap: 10px;
+}
+
+.start-button {
+  background-color: #0f1e93;
+  border-radius: 48px;
+  padding: 14px 16px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.more-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #22282a;
+  border-radius: 48px;
+  padding: 14px 16px;
+}

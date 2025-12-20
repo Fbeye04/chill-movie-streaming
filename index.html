@@ -8,54 +8,306 @@
   </head>
   <body>
     <header>
-      <div class="title">
-        <img src="./assets/movie open.svg" alt="movie open icon" />
-        <h1>Chill</h1>
+      <div class="left-header">
+        <div class="title">
+          <img src="./assets/movie open.svg" alt="movie open icon" />
+          <h3>Chill</h3>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Film</a></li>
+            <li><a href="#">Daftar Saya</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#">Series</a></li>
-          <li><a href="#">Film</a></li>
-          <li><a href="#">Daftar Saya</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <img src="./assets/avatar.png" alt="profile icon" />
-        <img src="./assets/arrow down.svg" alt="arrow down icon" />
+      <div class="profile">
+        <img src="./assets/avatar.png" alt="profile icon" class="avatar" />
+        <img
+          src="./assets/arrow down.svg"
+          alt="arrow down"
+          class="arrow-down" />
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="movie-description">
-          <h2>Duty After School</h2>
-          <p>
-            Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
-            Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk
-            siswa sekolah menengah. Mereka pun segera menjadi pejuang garis
-            depan dalam perang.
-          </p>
-        </div>
+        <img
+          src="./assets/hero banner.png"
+          class="hero-img"
+          alt="movie recomendation banner" />
 
-        <div class="detail-movie">
-          <div class="button-detail">
-            <a href="#">Mulai</a>
-            <a href="#">
-              <img
-                src="./assets/information outline.svg"
-                alt="information outline icon" />
-              Selengkapnya
-            </a>
-            <span>18+</span>
+        <div class="hero-overlay"></div>
+
+        <div class="movie-detail">
+          <div class="description">
+            <h1>Duty After School</h1>
+            <p>
+              Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+              Departemen Pertahanan mulai merekrut lebih banyak tentara,
+              termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang
+              garis depan dalam perang.
+            </p>
           </div>
 
-          <button>
-            <img src="./assets/volume off.svg" alt="volume off icon" />
-          </button>
+          <div class="navigation">
+            <div class="button-detail">
+              <a href="#" class="start-button">Mulai</a>
+              <a href="#" class="more-button">
+                <img
+                  src="./assets/information outline.svg"
+                  alt="information outline icon" />
+                Selengkapnya
+              </a>
+              <span>18+</span>
+            </div>
+
+            <button>
+              <img src="./assets/volume off.svg" alt="volume off icon" />
+            </button>
+          </div>
         </div>
       </section>
+
+      <!-- <section class="watch-continue">
+        <h3>Melanjutkan Tonton Film</h3>
+
+        <div class="carousel-container">
+          <button id="prev-btn" class="prev-btn"></button>
+
+          <div class="slide-wrapper">
+            <div class="movie-card">
+              <img
+                src="./assets/don't look up.png"
+                alt="don't look up poster" />
+
+              <div class="movie-detail">
+                <h6>Don't Look Up</h6>
+
+                <div class="right-part-wc">
+                  <img src="./assets/star.svg" alt="star icon" />
+                  <span>4.5/5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <img src="./assets/all of us.png" alt="all of us are dead" />
+
+              <div class="movie-detail">
+                <h6>All of Us Are Dead</h6>
+
+                <div class="right-part-wc">
+                  <img src="./assets/star.svg" alt="star icon" />
+                  <span>4.2/5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="movie-card">
+              <img src="./assets/blue lock.png" alt="blue lock" />
+
+              <div class="movie-detail">
+                <h6>Blue Lock</h6>
+
+                <div class="right-part-wc">
+                  <img src="./assets/star.svg" alt="star icon" />
+                  <span>4.6/5</span>
+                </div>
+              </div>
+
+              <span class="new-episode-sign">Episode Baru</span>
+            </div>
+
+            <div class="movie-card">
+              <img
+                src="./assets/a man called otto.png"
+                alt="a man called otto" />
+
+              <div class="movie-detail">
+                <h6>A Man Called Otto</h6>
+
+                <div class="right-part-wc">
+                  <img src="./assets/star.svg" alt="star icon" />
+                  <span>4.4/5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button id="next-btn" class="next-btn"></button>
+        </div>
+      </section>
+
+      <section class="top-rating">
+        <h3>Top Rating Film dan Series Hari ini</h3>
+
+        <div class="carousel-countainer">
+          <button id="prev-btn" class="prev-btn"></button>
+
+          <div class="slide-wrapper">
+            <div>
+              <img src="./assets/suzume.png" alt="suzume no tojimari" />
+              <span class="new-episode-sign">Episode Baru</span>
+            </div>
+
+            <img src="./assets/jurassic world.png" alt="jurassic world" />
+            <img src="./assets/sonic 2.png" alt="sonic 2" />
+
+            <div>
+              <img
+                src="./assets/all of us are dead.png"
+                alt="all of us are dead" />
+              <span class="new-episode-sign">Episode Baru</span>
+            </div>
+
+            <img src="./assets/big hero 6.png" alt="big hero 6" />
+          </div>
+
+          <button id="next-btn" class="next-btn"></button>
+        </div>
+      </section>
+
+      <section class="film-trending">
+        <h3>Film Trending</h3>
+
+        <div class="carousel-countainer">
+          <button id="prev-btn" class="prev-btn"></button>
+
+          <div class="slide-wrapper">
+            <div>
+              <img src="./assets/the tomorrow war.png" alt="the tomorrow war" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/antman wasp quantumania.png"
+                alt="ant-man wasp quantumania" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/guardians of the galaxy volume 3.png"
+                alt="guardians of the galaxy volume 3" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/a man called otto v2.png"
+                alt="all of us are dead" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/the little mermaid.png"
+                alt="the little mermaid" />
+              <span>Top 10</span>
+            </div>
+          </div>
+
+          <button id="next-btn" class="next-btn"></button>
+        </div>
+      </section>
+
+      <section class="new-release">
+        <h3>Rilis Baru</h3>
+
+        <div class="carousel-countainer">
+          <button id="prev-btn" class="prev-btn"></button>
+
+          <div class="slide-wrapper">
+            <div>
+              <img
+                src="./assets/the little mermaid.png"
+                alt="the little mermaid" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/duty after school.png"
+                alt="duty after school" />
+              <span>Episode Baru</span>
+            </div>
+
+            <div>
+              <img src="./assets/big hero 6.png" alt="big hero 6" />
+              <span>Top 10</span>
+            </div>
+
+            <div>
+              <img
+                src="./assets/all of us are dead.png"
+                alt="all of us are dead" />
+              <span>Episode Baru</span>
+            </div>
+
+            <div>
+              <img src="./assets/missing.png" alt="missing" />
+            </div>
+          </div>
+
+          <button id="next-btn" class="next-btn"></button>
+        </div>
+      </section> -->
     </main>
+
+    <!-- <footer>
+      <div class="title-copyright">
+        <div class="title">
+          <img src="./assets/movie open.svg" alt="movie open icon" />
+          <h3>Chill</h3>
+        </div>
+
+        <p class="copyright">@2023 Chill All Rights Reserved.</p>
+      </div>
+
+      <div class="genre">
+        <p>Genre</p>
+
+        <ul>
+          <li>Aksi</li>
+          <li>Anak-anak</li>
+          <li>Anime</li>
+          <li>Britania</li>
+        </ul>
+
+        <ul>
+          <li>Drama</li>
+          <li>Fantasi Ilmiah & Fantasi</li>
+          <li>Kejahatan</li>
+          <li>KDrama</li>
+        </ul>
+
+        <ul>
+          <li>Komedi</li>
+          <li>Petualangan</li>
+          <li>Perang</li>
+          <li>Romantis</li>
+        </ul>
+
+        <ul>
+          <li>Sains & Alam</li>
+          <li>Thriller</li>
+        </ul>
+      </div>
+
+      <div class="Help">
+        <p>Bantuan</p>
+
+        <ul>
+          <li>FAQ</li>
+          <li>Kontak Kami</li>
+          <li>Privasi</li>
+          <li>Syarat & Ketentuan</li>
+        </ul>
+      </div>
+    </footer> -->
   </body>
 </html>
