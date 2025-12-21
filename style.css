@@ -50,10 +50,14 @@ header {
   font-size: 32px;
 }
 
-ul {
+nav ul {
   list-style: none;
   display: flex;
   gap: 80px;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -83,16 +87,17 @@ a {
 .hero {
   position: relative;
   width: 100%;
+  height: 470px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  top: 94px;
+  margin-top: 100px;
 }
 
 .hero-img {
   position: absolute;
   width: 100%;
-  height: 470px;
+  height: 100%;
   object-fit: cover;
   z-index: 1;
 }
@@ -102,16 +107,24 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 470px;
-  background: linear-gradient(to top, #181a1cbc 60%, transparent 80%);
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    #181a1c 0%,
+    rgba(24, 26, 28, 0.8) 30%,
+    rgba(24, 26, 28, 0.4) 60%,
+    transparent 85%
+  );
   z-index: 2;
+  pointer-events: none;
 }
 
 .movie-detail {
-  position: relative;
+  position: absolute;
   z-index: 3;
   width: 100%;
-  top: 220px;
+  bottom: 60px;
+  left: 0;
   padding: 0 60px;
   display: flex;
   flex-direction: column;
@@ -137,6 +150,7 @@ a {
 .description p {
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: 0.2px;
 }
 
 .navigation {
@@ -166,4 +180,331 @@ a {
   background-color: #22282a;
   border-radius: 48px;
   padding: 14px 16px;
+}
+
+.age-warning {
+  border: 1px solid #c1c2c4;
+  border-radius: 24px;
+  padding: 14px 16px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.volume-off-button {
+  background-color: transparent;
+  border: 1px solid #c1c2c4;
+  padding: 14px 16px;
+  border-radius: 24px;
+}
+
+.watch-continue {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 32px;
+  width: 100%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.prev-btn {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2f3334;
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  border-radius: 24px;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  z-index: 5;
+}
+
+.prev-btn img,
+.next-btn img {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.next-btn {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -22px;
+  background: #2f3334;
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  border-radius: 24px;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  z-index: 4;
+}
+
+.slide-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.movie-card {
+  position: relative;
+  width: 100%;
+}
+
+.movie-card img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.detail {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to top, #181a1cbc 40%, transparent 80%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail h6 {
+  font-size: 18px;
+}
+
+.right-part-wc {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.right-part-wc img {
+  width: 16px;
+  height: 16px;
+}
+
+.right-part-wc span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-episode-sign {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #0f1e93;
+  border-radius: 24px;
+  background: #0f1e93;
+  padding: 4px 10px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+  font-size: 14px;
+}
+
+.top-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 32px;
+  width: 100%;
+}
+
+.film-trending {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 32px;
+  width: 100%;
+}
+
+.movie-card .top-ten-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px;
+  gap: 10px;
+  position: absolute;
+  width: 31px;
+  height: 48px;
+  left: 160px;
+  top: 0px;
+  background: #b71f1d;
+  border-radius: 0px 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.new-release {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 80px;
+  gap: 32px;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 20px;
+  width: 100%;
+  background: #181a1c;
+  border-top: 1px solid rgba(231, 227, 252, 0.23);
+}
+
+.title-copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.genre,
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.genre-collections {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: self-start;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.genre-collections ul,
+.help ul {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: #c1c2c4;
+}
+
+.title-copyright .title img {
+  width: 43px;
+  height: 36px;
+}
+
+.title-copyright .title h3 {
+  font-size: 50px;
+}
+
+.copyright {
+  color: #c1c2c4;
+  font-size: 16px;
+}
+
+@media (width < 650px) {
+  header {
+    padding: 6px 20px;
+  }
+
+  .title img {
+    width: 17px;
+    width: 15px;
+  }
+
+  .title h3 {
+    display: none;
+  }
+
+  .left-header {
+    gap: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  a {
+    font-size: 10px;
+  }
+
+  .avatar {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrow-down {
+    width: 8px;
+    height: 5px;
+  }
+
+  .description {
+    width: 320px;
+  }
+
+  .description h1 {
+    font-size: 24px;
+  }
+
+  .description p {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero {
+    margin-top: 50px;
+    height: 300px;
+  }
+
+  /* Frame 58 */
+  .movie-detail {
+    gap: 20px;
+    padding: 0 30px;
+    bottom: 20px;
+  }
+
+  .start-button,
+  .more-button,
+  .age-warning,
+  .volume-off-button {
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .volume-off-button img {
+    width: 12px;
+    height: 12px;
+  }
 }
