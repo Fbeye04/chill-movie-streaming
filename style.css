@@ -22,8 +22,10 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 48px;
-  position: absolute;
+  position: sticky;
+  top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .left-header {
@@ -65,6 +67,7 @@ a {
   color: #ffffff;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .profile {
@@ -82,6 +85,7 @@ a {
 .arrow-down {
   width: 14px;
   height: 9px;
+  cursor: pointer;
 }
 
 .hero {
@@ -91,7 +95,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 100px;
 }
 
 .hero-img {
@@ -196,6 +199,7 @@ a {
   border: 1px solid #c1c2c4;
   padding: 14px 16px;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .watch-continue {
@@ -230,6 +234,7 @@ h3 {
   order: 5;
   flex-grow: 0;
   z-index: 5;
+  cursor: pointer;
 }
 
 .prev-btn img,
@@ -255,6 +260,7 @@ h3 {
   order: 4;
   flex-grow: 0;
   z-index: 4;
+  cursor: pointer;
 }
 
 .slide-wrapper {
@@ -265,6 +271,7 @@ h3 {
 .movie-card {
   position: relative;
   width: 100%;
+  cursor: pointer;
 }
 
 .movie-card img {
@@ -337,7 +344,7 @@ h3 {
   width: 100%;
 }
 
-.movie-card .top-ten-sign {
+.top-ten-sign {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -346,7 +353,7 @@ h3 {
   position: absolute;
   width: 31px;
   height: 48px;
-  left: 160px;
+  right: 10px;
   top: 0px;
   background: #b71f1d;
   border-radius: 0px 4px;
@@ -409,6 +416,12 @@ footer {
   order: 0;
   flex-grow: 0;
   color: #c1c2c4;
+  cursor: pointer;
+}
+
+.genre-collections img,
+.help img {
+  display: none;
 }
 
 .title-copyright .title img {
@@ -425,9 +438,112 @@ footer {
   font-size: 16px;
 }
 
+@media (width < 920px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .left-header {
+    gap: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .movie-detail {
+    padding: 0 40px;
+  }
+
+  .description {
+    width: 500px;
+  }
+
+  .description h1 {
+    font-size: 30px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .watch-continue,
+  .top-rating,
+  .film-trending,
+  .new-release,
+  footer {
+    padding: 20px 40px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    display: none;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .slide-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .watch-continue-poster {
+    min-width: 400px;
+    flex-shrink: 0;
+  }
+
+  .long-poster {
+    min-width: 200px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px 40px;
+  }
+
+  .title-copyright {
+    gap: 10px;
+  }
+
+  .genre,
+  .help {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .genre p,
+  .help p {
+    font-size: 20px;
+  }
+
+  .genre-collections img,
+  .help img {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .genre-collections ul,
+  .help ul {
+    display: none;
+  }
+}
+
 @media (width < 650px) {
   header {
-    padding: 6px 20px;
+    padding: 15px 25px;
   }
 
   .title img {
@@ -435,7 +551,7 @@ footer {
     width: 15px;
   }
 
-  .title h3 {
+  .left-header .title h3 {
     display: none;
   }
 
@@ -451,7 +567,7 @@ footer {
   }
 
   a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .avatar {
@@ -482,11 +598,9 @@ footer {
   }
 
   .hero {
-    margin-top: 50px;
     height: 300px;
   }
 
-  /* Frame 58 */
   .movie-detail {
     gap: 20px;
     padding: 0 30px;
@@ -506,5 +620,71 @@ footer {
   .volume-off-button img {
     width: 12px;
     height: 12px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .watch-continue,
+  .top-rating,
+  .film-trending,
+  .new-release,
+  footer {
+    padding: 20px;
+  }
+
+  .detail h6 {
+    font-size: 14px;
+  }
+
+  .slide-wrapper {
+    gap: 16px;
+  }
+
+  .watch-continue-poster {
+    min-width: 309px;
+    width: 309px;
+    flex-shrink: 0;
+  }
+
+  .long-poster {
+    min-width: 95px;
+  }
+
+  .new-episode-mobile {
+    font-size: 6px;
+    padding: 2px 5px;
+    left: 5px;
+  }
+
+  .top-ten-mobile {
+    font-size: 7px;
+    width: 15px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    gap: 20px;
+  }
+
+  .title-copyright {
+    gap: 20px;
+  }
+
+  .title-copyright .title h3 {
+    font-size: 24px;
+  }
+
+  .title-copyright .title img {
+    width: 24px;
+    height: 21px;
+  }
+
+  .genre p,
+  .help p {
+    font-size: 16px;
   }
 }
