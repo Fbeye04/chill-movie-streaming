@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill || Register</title>
+    <link rel="stylesheet" href="./register.css" />
+  </head>
+  <body>
+    <main>
+      <div class="register-card">
+        <div class="brand-logo">
+          <img src="./assets/movie open.svg" alt="chill logo" />
+          <h1>CHILL</h1>
+        </div>
+
+        <div class="welcome">
+          <h2>Daftar</h2>
+          <p>Selamat datang!</p>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Masukkan username"
+              required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Kata Sandi</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Masukkan kata sandi"
+                required />
+              <button class="toggle-password" type="button">
+                <img src="./assets/eye off.svg" alt="show password" />
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmation-password">Konfirmasi Kata Sandi</label>
+            <div class="input-wrapper">
+              <input
+                type="password"
+                name="confirmation-password"
+                id="confirmation-password"
+                placeholder="Masukkan kata sandi"
+                required />
+              <button class="toggle-password" type="button">
+                <img src="./assets/eye off.svg" alt="show password" />
+              </button>
+            </div>
+          </div>
+
+          <p>Sudah punya akun? <a href="#">Masuk</a></p>
+
+          <button type="submit" class="register-button">Daftar</button>
+
+          <p>Atau</p>
+
+          <button type="button" class="google-button">
+            <img src="./assets/google.png" alt="google icon" />
+            Daftar dengan Google
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
