@@ -1,0 +1,376 @@
+# 🎬 Chill - Movie Streaming Platform
+
+![Chill Logo](./assets/movie%20open.svg)
+
+Sebuah platform streaming film modern yang didesain dengan fokus pada user experience dan tampilan visual yang menarik. Project ini dibuat sebagai tugas desain web menggunakan HTML dan CSS murni.
+
+---
+
+## 📋 Daftar Isi
+
+- [Tentang Project](#-tentang-project)
+- [Fitur](#-fitur)
+- [Teknologi](#-teknologi)
+- [Struktur Project](#-struktur-project)
+- [Instalasi](#-instalasi)
+- [Halaman](#-halaman)
+- [Responsive Design](#-responsive-design)
+- [Preview](#-preview)
+- [Pengembangan](#-pengembangan)
+- [Kontributor](#-kontributor)
+- [Lisensi](#-lisensi)
+
+---
+
+## 🎯 Tentang Project
+
+**Chill** adalah sebuah website movie streaming platform yang didesain untuk memberikan pengalaman menonton film yang nyaman dan modern. Project ini dibuat dengan HTML dan CSS murni tanpa menggunakan framework atau library eksternal.
+
+### Tujuan Project:
+
+- Memahami konsep dasar HTML semantik
+- Menguasai CSS layout (Flexbox, positioning)
+- Membuat responsive design untuk berbagai ukuran layar
+- Implementasi UI/UX design yang user-friendly
+
+---
+
+## ✨ Fitur
+
+### 🏠 Landing Page
+
+- **Hero Banner** - Menampilkan film rekomendasi dengan deskripsi lengkap
+- **Continue Watching** - Carousel film yang sedang ditonton dengan progress
+- **Top Rating** - Daftar film dan series dengan rating tertinggi
+- **Trending Movies** - Film-film yang sedang trending dengan badge "Top 10"
+- **New Releases** - Film-film rilis terbaru
+- **Responsive Carousel** - Dapat di-scroll horizontal dengan smooth scrolling
+- **Sticky Header** - Navigasi yang tetap terlihat saat scroll
+
+### 📝 Register Page
+
+- Form registrasi dengan validasi
+- Username input
+- Password dengan toggle show/hide
+- Konfirmasi password
+- Integrasi Google Sign-In (UI)
+- Link ke halaman login
+- Background blur effect
+
+### 🔐 Login Page
+
+- Form login minimal dan clean
+- Username dan password input
+- Toggle show/hide password
+- Link "Lupa kata sandi?"
+- Link ke halaman register
+- Google Sign-In option (UI)
+
+---
+
+## 🛠️ Teknologi
+
+Project ini dibangun menggunakan teknologi web dasar:
+
+- **HTML5** - Struktur dan konten website
+- **CSS3** - Styling dan layout
+  - Flexbox untuk layout
+  - CSS Grid (jika digunakan)
+  - Media Queries untuk responsive
+  - CSS Variables untuk theming
+- **Google Fonts** - Lato & Londrina Solid
+
+### Font yang Digunakan:
+
+- **Lato** - Font utama untuk body text
+- **Londrina Solid** - Font untuk logo/brand
+
+---
+
+## 📁 Struktur Project
+
+```
+chill-project/
+│
+├── index.html              # Landing page
+├── register.html           # Halaman registrasi
+├── login.html              # Halaman login
+│
+├── landing.css             # Styles untuk landing page
+├── register.css            # Styles untuk register page
+├── login.css               # Styles untuk login page
+│
+├── assets/                 # Folder untuk semua asset
+│   ├── movie open.svg      # Logo Chill
+│   ├── avatar.png          # Avatar user
+│   ├── hero banner.png     # Banner hero section
+│   ├── register background.jpg
+│   ├── login background.jpg
+│   ├── google.png          # Icon Google
+│   ├── star.svg            # Icon rating
+│   ├── eye off.svg         # Icon toggle password
+│   ├── left-arrow.svg      # Icon carousel prev
+│   ├── right arrow.svg     # Icon carousel next
+│   │
+│   └── posters/            # Movie posters
+│       ├── don't look up.png
+│       ├── all of us.png
+│       ├── blue lock.png
+│       └── ...
+│
+└── README.md               # Dokumentasi project
+```
+
+---
+
+## 🚀 Instalasi
+
+### Prasyarat
+
+Tidak ada prasyarat khusus. Cukup web browser modern seperti:
+
+- Google Chrome (recommended)
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+### Cara Menjalankan
+
+1. **Clone atau Download Project**
+
+   ```bash
+   git clone https://github.com/username/chill-streaming.git
+   cd chill-streaming
+   ```
+
+2. **Buka dengan Browser**
+
+   - Klik kanan pada file `index.html`
+   - Pilih "Open with" → Browser pilihan Anda
+
+   Atau gunakan Live Server jika menggunakan VS Code:
+
+   ```bash
+   # Install Live Server extension di VS Code
+   # Klik kanan index.html → "Open with Live Server"
+   ```
+
+3. **Explore!**
+   - Landing page akan terbuka
+   - Navigasi ke Register/Login melalui link yang tersedia
+
+---
+
+## 📄 Halaman
+
+### 1. Landing Page (`index.html`)
+
+**URL:** `index.html`
+
+**Fitur:**
+
+- Hero banner dengan film "Duty After School"
+- Tombol "Mulai" dan "Selengkapnya"
+- Age rating indicator (18+)
+- Volume control
+- 4 Section carousel:
+  - Melanjutkan Tonton Film
+  - Top Rating Film dan Series Hari ini
+  - Film Trending
+  - Rilis Baru
+- Footer dengan informasi genre dan bantuan
+
+**Komponen:**
+
+- Header dengan navigasi (Series, Film, Daftar Saya)
+- Profile avatar dengan dropdown
+- Movie cards dengan rating
+- Badge "Episode Baru" dan "Top 10"
+
+---
+
+### 2. Register Page (`register.html`)
+
+**URL:** `register.html`
+
+**Fitur:**
+
+- Form registrasi dengan 3 input field
+- Toggle password visibility
+- Validasi konfirmasi password
+- Link ke halaman login
+- Google Sign-In button
+
+**Form Fields:**
+
+- Username
+- Kata Sandi
+- Konfirmasi Kata Sandi
+
+---
+
+### 3. Login Page (`login.html`)
+
+**URL:** `login.html`
+
+**Fitur:**
+
+- Form login minimal
+- Toggle password visibility
+- Link "Lupa kata sandi?"
+- Link ke halaman register
+- Google Sign-In option
+
+**Form Fields:**
+
+- Username
+- Kata Sandi
+
+---
+
+## 📱 Responsive Design
+
+Project ini didesain fully responsive dengan 3 breakpoint utama:
+
+### Desktop (> 920px)
+
+- Layout full dengan sidebar
+- Carousel dengan navigation buttons
+- Multi-column footer
+- Large hero banner (470px height)
+
+### Tablet (650px - 920px)
+
+- Adjusted spacing dan padding
+- Carousel tetap functional
+- Footer menjadi 2 kolom
+- Hero banner medium (400px height)
+
+### Mobile (< 650px)
+
+- Single column layout
+- Touch-friendly carousel
+- Simplified navigation
+- Compact hero banner (300px height)
+- Font size disesuaikan untuk readability
+
+### Media Queries:
+
+```css
+@media (width < 920px) {
+  /* Tablet */
+}
+@media (width < 650px) {
+  /* Mobile */
+}
+```
+
+---
+
+## 👀 Preview
+
+### Landing Page
+
+- Hero section dengan overlay gradient
+- Carousel horizontal dengan smooth scroll
+- Movie cards dengan hover effect
+- Rating dan badge system
+
+### Register & Login
+
+- Centered card dengan blur background
+- Form dengan border subtle
+- Toggle password visibility
+- Social login integration (UI only)
+
+---
+
+## 🔧 Pengembangan
+
+### Fitur yang Bisa Ditambahkan:
+
+**Frontend:**
+
+- [ ] JavaScript untuk carousel navigation buttons
+- [ ] Form validation dengan JavaScript
+- [ ] Modal untuk "Selengkapnya" di hero section
+- [ ] Search functionality
+- [ ] Filter by genre
+- [ ] Smooth scroll animation
+- [ ] Loading skeleton
+- [ ] Dark/Light mode toggle
+
+**Backend Integration:**
+
+- [ ] User authentication
+- [ ] Database integration
+- [ ] API untuk movie data
+- [ ] Watch history tracking
+- [ ] User preferences
+- [ ] Social login (Google, Facebook)
+
+**Improvements:**
+
+- [ ] Accessibility (ARIA labels, keyboard navigation)
+- [ ] SEO optimization
+- [ ] Performance optimization (lazy loading images)
+- [ ] PWA (Progressive Web App)
+- [ ] Internationalization (i18n)
+
+---
+
+## 🎨 Design System
+
+### Color Palette:
+
+```css
+Primary Blue:    #0f1e93
+Dark Background: #181a1c
+Light Text:      #ffffff
+Gray Text:       #c1c2c4
+Border Color:    #e7e3fc3b
+Accent Red:      #b71f1d
+```
+
+### Typography:
+
+- **Headings:** Lato Bold (700)
+- **Body:** Lato Regular (400)
+- **Brand:** Londrina Solid (400)
+
+### Border Radius:
+
+- Buttons: 24px (pill shape)
+- Cards: 16px
+- Input fields: 24px
+- Badges: 24px
+
+---
+
+## 👨‍💻 Kontributor
+
+- **Fachrezi** - Initial work - [GitHub Profile](https://github.com/Fbeye04)
+
+---
+
+## 📝 Lisensi
+
+Project ini dibuat untuk keperluan edukasi dan portofolio. Anda bebas menggunakan, memodifikasi, dan mendistribusikan dengan menyertakan credit.
+
+---
+
+## 🙏 Acknowledgments
+
+- Desain terinspirasi dari platform streaming seperti Netflix dan Disney+
+- Icons dari berbagai sumber (SVG)
+- Movie posters untuk demo purposes only
+- Google Fonts untuk typography
+
+---
+
+## 📞 Kontak
+
+Jika ada pertanyaan atau saran, silakan hubungi:
+
+- Email: fachrezibarus@gmail.com
+- LinkedIn: [Muhammad Fachrezi Barus](https://www.linkedin.com/in/muhammad-fachrezi-barus/)
