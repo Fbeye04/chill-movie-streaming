@@ -11,23 +11,25 @@
       <div class="register-card">
         <div class="brand-logo">
           <img src="./assets/movie open.svg" alt="chill logo" />
-          <h1>CHILL</h1>
+          <span>CHILL</span>
         </div>
 
         <div class="welcome">
-          <h2>Daftar</h2>
+          <h1>Daftar</h1>
           <p>Selamat datang!</p>
         </div>
 
         <form>
           <div class="form-group">
             <label for="username">Username</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Masukkan username"
-              required />
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Masukkan username"
+                required />
+            </div>
           </div>
 
           <div class="form-group">
@@ -45,7 +47,7 @@
             </div>
           </div>
 
-          <div class="form-group">
+          <div class="form-group last-form-group">
             <label for="confirmation-password">Konfirmasi Kata Sandi</label>
             <div class="input-wrapper">
               <input
@@ -60,16 +62,18 @@
             </div>
           </div>
 
-          <p>Sudah punya akun? <a href="#">Masuk</a></p>
+          <p class="login-link">Sudah punya akun? <a href="#">Masuk</a></p>
 
-          <button type="submit" class="register-button">Daftar</button>
+          <div class="action-button">
+            <button type="submit" class="register-button">Daftar</button>
 
-          <p>Atau</p>
+            <p>Atau</p>
 
-          <button type="button" class="google-button">
-            <img src="./assets/google.png" alt="google icon" />
-            Daftar dengan Google
-          </button>
+            <button type="button" class="google-button">
+              <img src="./assets/google.png" alt="google icon" />
+              Daftar dengan Google
+            </button>
+          </div>
         </form>
       </div>
     </main>
