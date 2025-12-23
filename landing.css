@@ -34,19 +34,19 @@ header {
   align-items: center;
 }
 
-.title {
+.brand-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 4px;
 }
 
-.title img {
+.brand-logo img {
   width: 25px;
   height: 22px;
 }
 
-.title h3 {
+.brand-logo span {
   font-family: "Londrina Solid", sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -424,12 +424,12 @@ footer {
   display: none;
 }
 
-.title-copyright .title img {
+.title-copyright .brand-logo img {
   width: 43px;
   height: 36px;
 }
 
-.title-copyright .title h3 {
+.title-copyright .brand-logo span {
   font-size: 50px;
 }
 
@@ -546,20 +546,20 @@ footer {
     padding: 15px 25px;
   }
 
-  .title img {
-    width: 17px;
-    width: 15px;
-  }
-
-  .left-header .title h3 {
-    display: none;
-  }
-
   .left-header {
     gap: 12px;
     flex: none;
     order: 0;
     flex-grow: 1;
+  }
+
+  .brand-logo img {
+    width: 17px;
+    height: 15px;
+  }
+
+  .brand-logo span {
+    display: none;
   }
 
   nav ul {
@@ -674,13 +674,14 @@ footer {
     gap: 20px;
   }
 
-  .title-copyright .title h3 {
-    font-size: 24px;
-  }
-
-  .title-copyright .title img {
+  .title-copyright .brand-logo img {
     width: 24px;
     height: 21px;
+  }
+
+  .title-copyright .brand-logo span {
+    font-size: 24px;
+    display: block;
   }
 
   .genre p,
